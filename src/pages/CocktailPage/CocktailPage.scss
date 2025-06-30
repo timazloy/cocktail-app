@@ -1,0 +1,95 @@
+@use '../src/app/styles/variables' as *;
+
+.product-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1024px;
+  justify-content: space-between;
+
+  &__properties {
+    padding-bottom: 20px;
+  }
+
+  &__image-wrapper {
+    flex: 1 1 300px;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__left {
+    flex: 1 1 400px;
+    min-width: 300px;
+  }
+
+  &__buttons {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 300px;
+  }
+
+  &__text {
+    max-width: 700px;
+  }
+
+  &__image-wrapper {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  .active {
+    border-bottom: 1px solid $red;
+  }
+
+}
+
+.cocktail-list {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.card-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.card {
+  background: $white-100;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 292px;
+  img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+}
+
+.lists {
+  display: flex;
+  padding: 20px;
+  gap: 40px;
+}
+
+.card-buttons {
+  &__button {
+    border-bottom: 1px solid transparent;
+  }
+}
+
+
